@@ -4,7 +4,7 @@ export default class Customer {
 
     private _id: string;
     private _name: string = "";
-    private _address: string = "";
+    private _address!: Address;
     private _active: boolean = true;
 
     constructor(id: string, name: string) {
@@ -21,5 +21,9 @@ export default class Customer {
         if (this._id.length === 0) {
             throw new Error("Id is required")
         }
+    }
+
+    set Address(address: Address) {
+        this._address = address
     }
 }
