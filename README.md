@@ -1,6 +1,6 @@
 # Repositório destinado ao estudo e pratica do módulo de DDD - Modelagem Tática e Padrões do Curso Full Cycle
 
-### Aqui eu venho aprendendo e praticando tópicos como:
+### Tópicos
 
 * TDD (Test Driven Development) - ***não faz parte do core do módulo em si, mas é usado na metodologia de ensino do professor Wesley Williams***
 * Modelagem estratégica vs tática
@@ -12,7 +12,7 @@
 * Eventos de domínio (Domain Events)
 * Fábricas (Factories)
 
-## Tecnologoas usadas
+## Ferramentas usadas
 
 * Typescript
 * SWC
