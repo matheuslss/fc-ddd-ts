@@ -2,12 +2,6 @@ import Address from "./address";
 import Customer from "./customer";
 
 describe("Customer unit tests", () => {
-  it("should create a customer", () => {
-    const customer = new Customer("123", "John");
-    expect(customer.id).toBe("123");
-    expect(customer.name).toBe("John");
-  });
-  
   it("should throw error when id is empty", () => {
     expect(() => {
       new Customer("", "John");
@@ -19,6 +13,19 @@ describe("Customer unit tests", () => {
       new Customer("123", "");
     }).toThrow("Name is required");
   });
+
+  it("should create a customer", () => {
+    const customer = new Customer("123", "John");
+    expect(customer.id).toBe("123");
+    expect(customer.name).toBe("John");
+  });
+
+  it("should throw error when change name with an empty name", () => {
+    expect(() => {
+      const customer = new Customer("123", "John");
+      customer.changeName("");
+    }).toThrow("Name is required");
+  })
 
   it("should change name", () => {
     const customer = new Customer("123", "John");
