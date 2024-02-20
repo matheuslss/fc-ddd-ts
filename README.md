@@ -2,7 +2,7 @@
 
 ### Tópicos
 
-* TDD (Test Driven Development) - ***não faz parte do core do módulo em si, mas é usado na metodologia de ensino do professor Wesley Williams***
+* TDD (Test Driven Development) - ***não faz parte do core do módulo em si, mas é usado na metodologia de ensino do professor Wesley Willians***
 * Modelagem estratégica vs tática
 * Entidades (Entities)
 * Objetos de valor (Value Objects)
