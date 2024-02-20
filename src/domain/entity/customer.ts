@@ -5,6 +5,7 @@ export default class Customer {
   private _name: string = "";
   private _address!: Address;
   private _active: boolean = true;
+  private _rewardPoints: number = 0;
 
   constructor(id: string, name: string) {
     this._id = id;
@@ -23,6 +24,14 @@ export default class Customer {
     return this._active;
   }
 
+  get rewardPoints(): number {
+    return this._rewardPoints;
+  }
+
+  set Address(address: Address) {
+    this._address = address;
+  }
+
   validate() {
     if (this._id.length === 0) {
       throw new Error("Id is required");
@@ -31,10 +40,6 @@ export default class Customer {
     if (this._name.length === 0) {
       throw new Error("Name is required");
     }
-  }
-
-  set Address(address: Address) {
-    this._address = address;
   }
 
   changeName(name: string) {
@@ -52,5 +57,9 @@ export default class Customer {
 
   deactivate() {
     this._active = false;
+  }
+
+  addRewardPoints(points: number) {
+    this._rewardPoints += points;
   }
 }
