@@ -4,11 +4,11 @@
 
 * TDD (Test Driven Development) - ***não faz parte do core do módulo em si, mas é usado na metodologia de ensino do professor Wesley Williams***
 * Modelagem estratégica vs tática
-* Entidades
+* Entidades (Entities)
 * Objetos de valor (Value Objects)
-* Agregados
+* Agregados (Aggregate)
 * Serviços de domínio (Domain Services)
-* Repositórios 
+* Repositórios (Respositories)
 * Eventos de domínio (Domain Events)
 * Fábricas (Factories)
 
