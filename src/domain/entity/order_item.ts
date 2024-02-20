@@ -14,4 +14,8 @@ export default class OrderItem {
   get price() {
     return this._price;
   }
+
+  get quantity() {
+    return this._quantity;
+  }
 }
