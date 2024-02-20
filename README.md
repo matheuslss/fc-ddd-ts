@@ -1,4 +1,4 @@
-# Repositório destinado à pratica do módulo de DDD - Modelagem tática e padrões do curso Full Cycle
+# Repositório destinado ao estudo e pratica do módulo de DDD - Modelagem tática e padrões do curso Full Cycle
 
 ### Aqui eu venho aprendendo e praticando tópicos como:
 
