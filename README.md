@@ -12,4 +12,14 @@
 * Eventos de domínio (Domain Events)
 * Fábricas (Factories)
 
-[Link para o curso Full Cycle](https://curso.fullcycle.com.br/curso-fullcycle/)
+## Tecnologoas usadas
+
+* Typescript
+* SWC
+* JEST
+
+## Fonte
+
+* [Curso Full Cycle](https://curso.fullcycle.com.br/curso-fullcycle/)
+* [Faça o download da brochura do cursto em pdf](http://lancamento.fullcycle.com.br/brochura-fullcycle-3.0.pdf)
+
