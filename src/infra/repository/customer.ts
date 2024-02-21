@@ -4,7 +4,7 @@ import CustomerRepositoryInterface from "../../domain/repository/customer";
 import CustomerModel from "../db/sequelize/model/customer";
 
 export default class CustomerRepository implements CustomerRepositoryInterface {
-  async create(customer: Customer) {
+  async create(customer: Customer): Promise<void> {
     await CustomerModel.create({
       id: customer.id,
       name: customer.name,
@@ -17,7 +17,7 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
     });
   }
 
-  async update(customer: Customer) {
+  async update(customer: Customer): Promise<void> {
     await CustomerModel.update(
       {
         name: customer.name,
