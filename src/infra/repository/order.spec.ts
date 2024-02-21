@@ -19,7 +19,7 @@ describe("Order repository tests", () => {
     sequelize = new Sequelize({
       dialect: "sqlite",
       storage: ":memory:",
-      logging: false,
+      logging: true,
       sync: { force: true },
     });
 
@@ -201,7 +201,7 @@ describe("Order repository tests", () => {
     const product = new Product("p1", "Product 1", 10);
     await productRepository.create(product);
 
-    const item = new OrderItem(
+    const item1 = new OrderItem(
       "i1",
       product.name,
       product.id,
@@ -209,12 +209,20 @@ describe("Order repository tests", () => {
       product.price
     );
 
-    const order1 = new Order("123", customer.id, [item]);
+    const item2 = new OrderItem(
+      "i2",
+      product.name,
+      product.id,
+      10,
+      product.price
+    );
+
+    const order1 = new Order("123", customer.id, [item1]);
 
     const orderRepository = new OrderRepository();
     await orderRepository.create(order1);
 
-    const order2 = new Order("456", customer.id, [item]);
+    const order2 = new Order("456", customer.id, [item2]);
     await orderRepository.create(order2);
 
     const orders = await orderRepository.findAll();
