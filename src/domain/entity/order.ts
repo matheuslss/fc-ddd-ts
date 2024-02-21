@@ -33,6 +33,14 @@ export default class Order {
     );
   }
 
+  addItem(item: OrderItem) {
+    this._items.push(item);
+  }
+
+  addItems(items: OrderItem[]) {
+    items.forEach((item) => this._items.push(item));
+  }
+
   validate() {
     if (this._id.length === 0) {
       throw new Error("Id is required");
