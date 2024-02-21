@@ -1,5 +1,4 @@
 import EventDispatcher from "./dispatcher";
-import EventHandlerInterface from "./handler.interface";
 import SendEmailWhenProductCreatedHandler from "./product/handler/send_email_when_product_created";
 import ProductCreatedEvent from "./product/product_created";
 
