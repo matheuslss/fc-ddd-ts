@@ -1,6 +1,6 @@
-import Address from "../../../entity/address";
-import Customer from "../../../entity/customer";
-import EventDispatcher from "../dispatcher";
+import Address from "../../entity/address";
+import Customer from "../../entity/customer";
+import EventDispatcher from "../../@shared/event/dispatcher";
 import AddressChangedEvent from "./address_changed";
 import CustomerCreatedEvent from "./customer_created";
 import SendFirstLogHandler from "./handler/send_first_log";
@@ -26,7 +26,7 @@ describe("Customer domain events unit tests", () => {
     expect(eventDispatcher.getHandlers["CustomerCreatedEvent"][1]).toBe(
       sendSecondLog
     );
-    
+
     const customer = new Customer("1", "Customer 1");
     const customerCreatedEvent = new CustomerCreatedEvent(customer);
 

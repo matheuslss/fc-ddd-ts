@@ -7,8 +7,8 @@ import {
   PrimaryKey,
   Table,
 } from "sequelize-typescript";
-import CustomerModel from "./customer";
-import OrderItemModel from "./order_item";
+import CustomerModel from "../customer/customer_model";
+import OrderItemModel from "./order_item_model";
 
 @Table({
   tableName: "orders",
