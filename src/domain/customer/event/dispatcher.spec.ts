@@ -1,5 +1,5 @@
-import Address from "../../entity/address";
-import Customer from "../../entity/customer";
+import Address from "../value_object/address";
+import Customer from "../entity/customer";
 import EventDispatcher from "../../@shared/event/dispatcher";
 import AddressChangedEvent from "./address_changed";
 import CustomerCreatedEvent from "./customer_created";
