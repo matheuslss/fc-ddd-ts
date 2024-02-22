@@ -4,12 +4,12 @@ import Customer from "../../../../domain/entity/customer";
 import Order from "../../../../domain/order/entity/order";
 import OrderItem from "../../../../domain/order/entity/order_item";
 import Product from "../../../../domain/product/entity/product";
-import CustomerModel from "../customer/customer_model";
-import ProductModel from "../product/product_model";
+import CustomerModel from "../../customer/sequelize/customer_model";
+import ProductModel from "../../product/sequelize/product_model";
 import OrderItemModel from "./order_item_model";
 import OrderModel from "./order_model";
-import CustomerRepository from "../customer/customer_repository";
-import ProductRepository from "../product/product_repository";
+import CustomerRepository from "../../customer/sequelize/customer_repository";
+import ProductRepository from "../../product/sequelize/product_repository";
 import OrderRepository from "./order_repository";
 
 describe("Order repository tests", () => {
